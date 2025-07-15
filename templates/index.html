@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Language Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Detect Language</h2>
+        <form action="/predict" method="post">
+            <textarea name="text_input" placeholder="Enter your sentence here..." required></textarea>
+            <button type="submit">Detect</button>
+        </form>
+    </div>
+</body>
+</html>

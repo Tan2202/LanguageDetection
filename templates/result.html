@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Prediction Result</h2>
+        <p><strong>Input:</strong> {{ input_text }}</p>
+        <p><strong>Predicted Language:</strong> {{ predicted_language }}</p>
+        <a href="/">Try Again</a>
+    </div>
+</body>
+</html>
